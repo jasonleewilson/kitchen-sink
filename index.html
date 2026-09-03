@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand Guidelines - HTML Elements</title>
+  <!-- Tailwind CSS CDN for CodePen -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-900 font-sans leading-relaxed">
+
+  <div class="max-w-5xl mx-auto px-6 py-12 space-y-16">
+
+    <!-- ========================================
+         SECTION: Typography - Headings
+    ========================================= -->
+    <section class="section-typography-headings space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Typography — Headings</div>
+      <h1 class="heading-1 text-5xl font-bold tracking-tight text-gray-900">Heading Level 1</h1>
+      <h2 class="heading-2 text-4xl font-bold tracking-tight text-gray-900">Heading Level 2</h2>
+      <h3 class="heading-3 text-3xl font-semibold text-gray-900">Heading Level 3</h3>
+      <h4 class="heading-4 text-2xl font-semibold text-gray-800">Heading Level 4</h4>
+      <h5 class="heading-5 text-xl font-medium text-gray-800">Heading Level 5</h5>
+      <h6 class="heading-6 text-lg font-medium text-gray-700">Heading Level 6</h6>
+    </section>
+
+    <!-- ========================================
+         SECTION: Typography - Display / Hero
+    ========================================= -->
+    <section class="section-typography-display space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Typography — Display / Hero</div>
+      <p class="display-xl text-6xl font-extrabold tracking-tighter text-gray-900">Display XL Text</p>
+      <p class="display-lg text-5xl font-extrabold tracking-tight text-gray-900">Display Large Text</p>
+      <p class="display-md text-4xl font-bold text-gray-900">Display Medium Text</p>
+    </section>
+
+    <!-- ========================================
+         SECTION: Typography - Body Text
+    ========================================= -->
+    <section class="section-typography-body space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Typography — Body Text</div>
+      <p class="body-lg text-lg text-gray-700 leading-relaxed">Body large — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <p class="body-base text-base text-gray-700 leading-relaxed">Body base — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+      <p class="body-sm text-sm text-gray-600 leading-relaxed">Body small — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p class="body-xs text-xs text-gray-500 leading-relaxed">Body extra small — Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.</p>
+    </section>
+
+    <!-- ========================================
+         SECTION: Typography - Inline Elements
+    ========================================= -->
+    <section class="section-typography-inline space-y-4">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Typography — Inline Elements</div>
+      <p class="text-base text-gray-700">This is <strong class="inline-bold font-bold text-gray-900">bold text</strong> within a paragraph.</p>
+      <p class="text-base text-gray-700">This is <em class="inline-italic italic">italic text</em> within a paragraph.</p>
+      <p class="text-base text-gray-700">This is <u class="inline-underline underline underline-offset-2">underlined text</u> within a paragraph.</p>
+      <p class="text-base text-gray-700">This is <s class="inline-strikethrough line-through text-gray-400">strikethrough text</s> within a paragraph.</p>
+      <p class="text-base text-gray-700">This is <mark class="inline-highlight bg-yellow-200 px-1 rounded">highlighted text</mark> within a paragraph.</p>
+      <p class="text-base text-gray-700">This is <code class="inline-code bg-gray-100 text-sm font-mono text-brand-700 px-1.5 py-0.5 rounded">inline code</code> within a paragraph.</p>
+      <p class="text-base text-gray-700">This is <small class="inline-small text-sm text-gray-500">small text</small> within a paragraph.</p>
+      <p class="text-base text-gray-700">This is <sub class="inline-subscript text-xs align-sub">subscript</sub> and <sup class="inline-superscript text-xs align-super">superscript</sup> text.</p>
+      <p class="text-base text-gray-700">This is an <abbr class="inline-abbr underline decoration-dotted cursor-help" title="Abbreviation">ABBR</abbr> element.</p>
+      <p class="text-base text-gray-700">Keyboard input: <kbd class="inline-kbd bg-gray-100 border border-gray-300 rounded px-1.5 py-0.5 text-sm font-mono shadow-sm">Ctrl</kbd> + <kbd class="inline-kbd bg-gray-100 border border-gray-300 rounded px-1.5 py-0.5 text-sm font-mono shadow-sm">C</kbd></p>
+    </section>
+
+    <!-- ========================================
+         SECTION: Links
+    ========================================= -->
+    <section class="section-links space-y-4">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Links</div>
+      <p><a href="#" class="link-default text-brand-600 hover:text-brand-800 underline underline-offset-2 transition-colors">Default link style</a></p>
+      <p><a href="#" class="link-subtle text-gray-600 hover:text-gray-900 hover:underline transition-colors">Subtle link style</a></p>
+      <p><a href="#" class="link-nav text-gray-700 font-medium hover:text-brand-600 transition-colors">Navigation link style</a></p>
+      <p><a href="#" class="link-cta text-brand-600 font-semibold hover:text-brand-800 inline-flex items-center gap-1 transition-colors">Call to action link &rarr;</a></p>
+    </section>
+
+    <!-- ========================================
+         SECTION: Buttons
+    ========================================= -->
+    <section class="section-buttons space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Buttons</div>
+      <div class="flex flex-wrap gap-4 items-center">
+        <button class="btn-primary bg-brand-600 text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 transition-colors">Primary Button</button>
+        <button class="btn-secondary bg-white text-brand-600 font-semibold px-6 py-2.5 rounded-lg border-2 border-brand-600 hover:bg-brand-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 transition-colors">Secondary Button</button>
+        <button class="btn-tertiary text-brand-600 font-semibold px-6 py-2.5 rounded-lg hover:bg-brand-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 transition-colors">Tertiary Button</button>
+        <button class="btn-ghost text-gray-600 font-medium px-6 py-2.5 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 transition-colors">Ghost Button</button>
+      </div>
+      <div class="flex flex-wrap gap-4 items-center">
+        <button class="btn-sm bg-brand-600 text-white font-medium text-sm px-4 py-1.5 rounded-md hover:bg-brand-700 transition-colors">Small</button>
+        <button class="btn-md bg-brand-600 text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-brand-700 transition-colors">Medium</button>
+        <button class="btn-lg bg-brand-600 text-white font-semibold text-lg px-8 py-3 rounded-lg hover:bg-brand-700 transition-colors">Large</button>
+      </div>
+      <div class="flex flex-wrap gap-4 items-center">
+        <button class="btn-danger bg-red-600 text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 transition-colors">Danger</button>
+        <button class="btn-success bg-green-600 text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors">Success</button>
+        <button class="btn-warning bg-yellow-500 text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 transition-colors">Warning</button>
+        <button class="btn-disabled bg-gray-200 text-gray-400 font-semibold px-6 py-2.5 rounded-lg cursor-not-allowed" disabled>Disabled</button>
+      </div>
+      <div>
+        <button class="btn-full-width w-full bg-brand-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-brand-700 transition-colors">Full Width Button</button>
+      </div>
+      <div class="flex flex-wrap gap-4 items-center">
+        <button class="btn-icon bg-brand-600 text-white p-2.5 rounded-lg hover:bg-brand-700 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+        </button>
+        <button class="btn-icon-text bg-brand-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-brand-700 transition-colors inline-flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          With Icon
+        </button>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Blockquote & Pullquote
+    ========================================= -->
+    <section class="section-blockquotes space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Blockquotes</div>
+      <blockquote class="blockquote-default border-l-4 border-brand-500 pl-6 py-2 text-lg text-gray-700 italic">
+        "This is a blockquote element. Use it for testimonials, pull quotes, or cited content."
+        <cite class="blockquote-cite block mt-2 text-sm text-gray-500 not-italic">&mdash; Author Name, Source</cite>
+      </blockquote>
+      <blockquote class="blockquote-accent bg-brand-50 border-l-4 border-brand-600 pl-6 pr-6 py-4 rounded-r-lg text-lg text-gray-700">
+        "An accented blockquote with a background color for more visual emphasis."
+      </blockquote>
+    </section>
+
+    <!-- ========================================
+         SECTION: Lists
+    ========================================= -->
+    <section class="section-lists space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Lists</div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Unordered List</h4>
+          <ul class="list-unordered list-disc list-inside space-y-2 text-gray-700">
+            <li>First list item</li>
+            <li>Second list item</li>
+            <li>Third list item with more text to show wrapping behavior</li>
+            <li>Fourth list item</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Ordered List</h4>
+          <ol class="list-ordered list-decimal list-inside space-y-2 text-gray-700">
+            <li>First list item</li>
+            <li>Second list item</li>
+            <li>Third list item with more text to show wrapping behavior</li>
+            <li>Fourth list item</li>
+          </ol>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Description List</h4>
+        <dl class="list-description space-y-4">
+          <div class="border-b border-gray-100 pb-3">
+            <dt class="font-semibold text-gray-900">Term One</dt>
+            <dd class="text-gray-600 mt-1">Description for term one with supporting details.</dd>
+          </div>
+          <div class="border-b border-gray-100 pb-3">
+            <dt class="font-semibold text-gray-900">Term Two</dt>
+            <dd class="text-gray-600 mt-1">Description for term two with supporting details.</dd>
+          </div>
+          <div>
+            <dt class="font-semibold text-gray-900">Term Three</dt>
+            <dd class="text-gray-600 mt-1">Description for term three with supporting details.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div>
+        <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Checklist Style</h4>
+        <ul class="list-checklist space-y-2 text-gray-700">
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Completed item
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Another completed item
+          </li>
+          <li class="flex items-center gap-2 text-gray-400">
+            <svg class="w-5 h-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="2"/></svg>
+            Pending item
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Horizontal Rule / Dividers
+    ========================================= -->
+    <section class="section-dividers space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Dividers</div>
+      <hr class="divider-default border-t border-gray-200">
+      <hr class="divider-thick border-t-2 border-gray-300">
+      <hr class="divider-accent border-t-2 border-brand-500">
+      <div class="divider-with-text flex items-center gap-4">
+        <div class="flex-1 border-t border-gray-200"></div>
+        <span class="text-sm text-gray-400 font-medium">OR</span>
+        <div class="flex-1 border-t border-gray-200"></div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Images & Media
+    ========================================= -->
+    <section class="section-images space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Images &amp; Media</div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <figure class="figure-default">
+          <div class="img-placeholder bg-gray-100 rounded-lg aspect-video flex items-center justify-center text-gray-400">
+            <span class="text-sm">Image Placeholder (16:9)</span>
+          </div>
+          <figcaption class="figcaption text-sm text-gray-500 mt-2">Figure caption — description of the image.</figcaption>
+        </figure>
+        <figure class="figure-rounded">
+          <div class="img-placeholder bg-gray-100 rounded-2xl aspect-square flex items-center justify-center text-gray-400">
+            <span class="text-sm">Image Placeholder (1:1)</span>
+          </div>
+          <figcaption class="figcaption text-sm text-gray-500 mt-2 text-center">Centered caption for square image.</figcaption>
+        </figure>
+      </div>
+
+      <div class="flex gap-6 items-center">
+        <div class="avatar-lg w-20 h-20 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 font-bold text-xl">AB</div>
+        <div class="avatar-md w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 font-semibold">AB</div>
+        <div class="avatar-sm w-8 h-8 bg-brand-100 rounded-full flex items-center justify-center text-brand-600 text-xs font-semibold">AB</div>
+      </div>
+
+      <div class="video-wrapper aspect-video bg-gray-900 rounded-lg flex items-center justify-center text-gray-400">
+        <span class="text-sm">Video / Embed Placeholder</span>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Code Blocks
+    ========================================= -->
+    <section class="section-code space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Code Blocks</div>
+      <pre class="code-block bg-gray-900 text-gray-100 text-sm font-mono rounded-lg p-6 overflow-x-auto"><code>// Code block example
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet('World'));</code></pre>
+      <pre class="code-block-light bg-gray-50 text-gray-800 text-sm font-mono rounded-lg p-6 border border-gray-200 overflow-x-auto"><code>&lt;div class="container"&gt;
+  &lt;h1&gt;HTML Example&lt;/h1&gt;
+  &lt;p&gt;Light themed code block.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    </section>
+
+    <!-- ========================================
+         SECTION: Tables
+    ========================================= -->
+    <section class="section-tables space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Tables</div>
+      <div class="table-wrapper overflow-x-auto rounded-lg border border-gray-200">
+        <table class="table-default w-full text-left">
+          <thead class="bg-gray-50 border-b border-gray-200">
+            <tr>
+              <th class="table-th px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">Name</th>
+              <th class="table-th px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">Role</th>
+              <th class="table-th px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">Status</th>
+              <th class="table-th px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr class="table-row hover:bg-gray-50 transition-colors">
+              <td class="table-td px-6 py-4 font-medium text-gray-900">Alice Johnson</td>
+              <td class="table-td px-6 py-4 text-gray-600">Designer</td>
+              <td class="table-td px-6 py-4"><span class="badge-success inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">Active</span></td>
+              <td class="table-td px-6 py-4"><a href="#" class="text-brand-600 hover:text-brand-800 text-sm font-medium">Edit</a></td>
+            </tr>
+            <tr class="table-row hover:bg-gray-50 transition-colors">
+              <td class="table-td px-6 py-4 font-medium text-gray-900">Bob Smith</td>
+              <td class="table-td px-6 py-4 text-gray-600">Developer</td>
+              <td class="table-td px-6 py-4"><span class="badge-warning inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">Pending</span></td>
+              <td class="table-td px-6 py-4"><a href="#" class="text-brand-600 hover:text-brand-800 text-sm font-medium">Edit</a></td>
+            </tr>
+            <tr class="table-row hover:bg-gray-50 transition-colors">
+              <td class="table-td px-6 py-4 font-medium text-gray-900">Carol Williams</td>
+              <td class="table-td px-6 py-4 text-gray-600">Manager</td>
+              <td class="table-td px-6 py-4"><span class="badge-danger inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Inactive</span></td>
+              <td class="table-td px-6 py-4"><a href="#" class="text-brand-600 hover:text-brand-800 text-sm font-medium">Edit</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Badges / Tags / Pills
+    ========================================= -->
+    <section class="section-badges space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Badges / Tags / Pills</div>
+      <div class="flex flex-wrap gap-3">
+        <span class="badge-default inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-gray-100 text-gray-700">Default</span>
+        <span class="badge-brand inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-brand-100 text-brand-800">Brand</span>
+        <span class="badge-success inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800">Success</span>
+        <span class="badge-warning inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">Warning</span>
+        <span class="badge-danger inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-800">Danger</span>
+        <span class="badge-info inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-800">Info</span>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <span class="tag-default inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200">Tag</span>
+        <span class="tag-brand inline-flex items-center px-2.5 py-0.5 rounded text-xs font-medium bg-brand-50 text-brand-700 border border-brand-200">Category</span>
+        <span class="tag-removable inline-flex items-center gap-1 px-2.5 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-600 border border-gray-200">
+          Removable
+          <button class="hover:text-gray-900">&times;</button>
+        </span>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Alerts / Notices
+    ========================================= -->
+    <section class="section-alerts space-y-4">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Alerts / Notices</div>
+      <div class="alert-info bg-blue-50 border border-blue-200 text-blue-800 px-6 py-4 rounded-lg" role="alert">
+        <strong class="font-semibold">Info:</strong> This is an informational alert message.
+      </div>
+      <div class="alert-success bg-green-50 border border-green-200 text-green-800 px-6 py-4 rounded-lg" role="alert">
+        <strong class="font-semibold">Success:</strong> Operation completed successfully.
+      </div>
+      <div class="alert-warning bg-yellow-50 border border-yellow-200 text-yellow-800 px-6 py-4 rounded-lg" role="alert">
+        <strong class="font-semibold">Warning:</strong> Please review before proceeding.
+      </div>
+      <div class="alert-danger bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-lg" role="alert">
+        <strong class="font-semibold">Error:</strong> Something went wrong. Please try again.
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Cards
+    ========================================= -->
+    <section class="section-cards space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Cards</div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="card-default bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+          <div class="card-image bg-gray-100 aspect-video flex items-center justify-center text-gray-400 text-sm">Card Image</div>
+          <div class="card-body p-6">
+            <h3 class="card-title text-lg font-semibold text-gray-900 mb-2">Card Title</h3>
+            <p class="card-text text-gray-600 text-sm mb-4">Brief description or excerpt for the card content area.</p>
+            <a href="#" class="card-link text-brand-600 text-sm font-semibold hover:text-brand-800">Learn more &rarr;</a>
+          </div>
+        </div>
+        <div class="card-elevated bg-white rounded-xl overflow-hidden shadow-lg">
+          <div class="card-image bg-gray-100 aspect-video flex items-center justify-center text-gray-400 text-sm">Card Image</div>
+          <div class="card-body p-6">
+            <h3 class="card-title text-lg font-semibold text-gray-900 mb-2">Elevated Card</h3>
+            <p class="card-text text-gray-600 text-sm mb-4">A card with more prominent shadow for emphasis.</p>
+            <button class="btn-primary bg-brand-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors">Action</button>
+          </div>
+        </div>
+        <div class="card-bordered bg-white border-2 border-brand-200 rounded-xl overflow-hidden">
+          <div class="card-image bg-brand-50 aspect-video flex items-center justify-center text-brand-400 text-sm">Card Image</div>
+          <div class="card-body p-6">
+            <span class="badge-brand inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-brand-100 text-brand-800 mb-3">Featured</span>
+            <h3 class="card-title text-lg font-semibold text-gray-900 mb-2">Featured Card</h3>
+            <p class="card-text text-gray-600 text-sm">Card with brand-colored border accent.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Forms
+    ========================================= -->
+    <section class="section-forms space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Form Elements</div>
+
+      <form class="form-default space-y-6 max-w-xl">
+        <!-- Text Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-text">Text Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="text" id="input-text" placeholder="Enter text...">
+        </div>
+
+        <!-- Email Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-email">Email Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="email" id="input-email" placeholder="name@example.com">
+          <p class="form-help-text text-xs text-gray-500 mt-1">We'll never share your email.</p>
+        </div>
+
+        <!-- Password Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-password">Password Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="password" id="input-password" placeholder="Enter password...">
+        </div>
+
+        <!-- Input with Error -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-error">Input with Error</label>
+          <input class="form-input-error w-full px-4 py-2.5 border-2 border-red-400 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors" type="text" id="input-error" value="Invalid value">
+          <p class="form-error-text text-xs text-red-600 mt-1">This field contains an error.</p>
+        </div>
+
+        <!-- Input with Success -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-success">Input with Success</label>
+          <input class="form-input-success w-full px-4 py-2.5 border-2 border-green-400 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-colors" type="text" id="input-success" value="Valid value">
+          <p class="form-success-text text-xs text-green-600 mt-1">Looks good!</p>
+        </div>
+
+        <!-- Disabled Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-400 mb-1" for="input-disabled">Disabled Input</label>
+          <input class="form-input-disabled w-full px-4 py-2.5 border border-gray-200 rounded-lg bg-gray-50 text-gray-400 cursor-not-allowed" type="text" id="input-disabled" value="Disabled" disabled>
+        </div>
+
+        <!-- Number Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-number">Number Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="number" id="input-number" placeholder="0">
+        </div>
+
+        <!-- Phone Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-tel">Phone Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="tel" id="input-tel" placeholder="(555) 123-4567">
+        </div>
+
+        <!-- URL Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-url">URL Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="url" id="input-url" placeholder="https://example.com">
+        </div>
+
+        <!-- Search Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-search">Search Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="search" id="input-search" placeholder="Search...">
+        </div>
+
+        <!-- Date Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-date">Date Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="date" id="input-date">
+        </div>
+
+        <!-- Time Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-time">Time Input</label>
+          <input class="form-input w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" type="time" id="input-time">
+        </div>
+
+        <!-- Color Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-color">Color Input</label>
+          <input class="form-input-color w-12 h-10 rounded cursor-pointer border border-gray-300" type="color" id="input-color" value="#0ea5e9">
+        </div>
+
+        <!-- Range Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-range">Range Input</label>
+          <input class="form-range w-full accent-brand-600" type="range" id="input-range" min="0" max="100" value="50">
+        </div>
+
+        <!-- File Input -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="input-file">File Upload</label>
+          <input class="form-file w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-brand-50 file:text-brand-700 hover:file:bg-brand-100 cursor-pointer" type="file" id="input-file">
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="textarea">Textarea</label>
+          <textarea class="form-textarea w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors resize-y" id="textarea" rows="4" placeholder="Enter longer text..."></textarea>
+        </div>
+
+        <!-- Select -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="select">Select Dropdown</label>
+          <select class="form-select w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" id="select">
+            <option value="" disabled selected>Select an option...</option>
+            <option value="1">Option One</option>
+            <option value="2">Option Two</option>
+            <option value="3">Option Three</option>
+          </select>
+        </div>
+
+        <!-- Multi-Select -->
+        <div class="form-group">
+          <label class="form-label block text-sm font-medium text-gray-700 mb-1" for="select-multi">Multi-Select</label>
+          <select class="form-select-multi w-full px-4 py-2.5 border border-gray-300 rounded-lg text-gray-900 bg-white focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors" id="select-multi" multiple size="4">
+            <option value="1">Option One</option>
+            <option value="2">Option Two</option>
+            <option value="3">Option Three</option>
+            <option value="4">Option Four</option>
+          </select>
+        </div>
+
+        <!-- Checkboxes -->
+        <fieldset class="form-group">
+          <legend class="form-legend text-sm font-medium text-gray-700 mb-2">Checkboxes</legend>
+          <div class="space-y-2">
+            <label class="form-checkbox-label flex items-center gap-3 cursor-pointer">
+              <input class="form-checkbox w-4 h-4 text-brand-600 border-gray-300 rounded focus:ring-brand-500" type="checkbox" checked>
+              <span class="text-gray-700">Checked option</span>
+            </label>
+            <label class="form-checkbox-label flex items-center gap-3 cursor-pointer">
+              <input class="form-checkbox w-4 h-4 text-brand-600 border-gray-300 rounded focus:ring-brand-500" type="checkbox">
+              <span class="text-gray-700">Unchecked option</span>
+            </label>
+            <label class="form-checkbox-label flex items-center gap-3 cursor-not-allowed">
+              <input class="form-checkbox w-4 h-4 text-gray-300 border-gray-200 rounded" type="checkbox" disabled>
+              <span class="text-gray-400">Disabled option</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Radio Buttons -->
+        <fieldset class="form-group">
+          <legend class="form-legend text-sm font-medium text-gray-700 mb-2">Radio Buttons</legend>
+          <div class="space-y-2">
+            <label class="form-radio-label flex items-center gap-3 cursor-pointer">
+              <input class="form-radio w-4 h-4 text-brand-600 border-gray-300 focus:ring-brand-500" type="radio" name="radio-group" checked>
+              <span class="text-gray-700">Selected option</span>
+            </label>
+            <label class="form-radio-label flex items-center gap-3 cursor-pointer">
+              <input class="form-radio w-4 h-4 text-brand-600 border-gray-300 focus:ring-brand-500" type="radio" name="radio-group">
+              <span class="text-gray-700">Unselected option</span>
+            </label>
+            <label class="form-radio-label flex items-center gap-3 cursor-pointer">
+              <input class="form-radio w-4 h-4 text-brand-600 border-gray-300 focus:ring-brand-500" type="radio" name="radio-group">
+              <span class="text-gray-700">Another option</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Toggle / Switch -->
+        <div class="form-group">
+          <label class="form-toggle-label flex items-center gap-3 cursor-pointer">
+            <div class="relative">
+              <input class="form-toggle sr-only peer" type="checkbox">
+              <div class="toggle-track w-11 h-6 bg-gray-300 rounded-full peer-checked:bg-brand-600 peer-focus:ring-2 peer-focus:ring-brand-500 peer-focus:ring-offset-2 transition-colors"></div>
+              <div class="toggle-thumb absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow peer-checked:translate-x-5 transition-transform"></div>
+            </div>
+            <span class="text-sm font-medium text-gray-700">Toggle switch</span>
+          </label>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="form-actions flex gap-4 pt-4">
+          <button type="submit" class="btn-primary bg-brand-600 text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 transition-colors">Submit</button>
+          <button type="reset" class="btn-secondary bg-white text-gray-600 font-semibold px-6 py-2.5 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ========================================
+         SECTION: Navigation Elements
+    ========================================= -->
+    <section class="section-navigation space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Navigation Elements</div>
+
+      <!-- Navbar -->
+      <nav class="navbar bg-white border border-gray-200 rounded-lg px-6 py-4 flex items-center justify-between">
+        <div class="navbar-brand font-bold text-xl text-gray-900">Brand</div>
+        <div class="navbar-links flex items-center gap-6">
+          <a href="#" class="nav-link text-brand-600 font-medium">Home</a>
+          <a href="#" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors">About</a>
+          <a href="#" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors">Services</a>
+          <a href="#" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors">Contact</a>
+          <button class="btn-primary bg-brand-600 text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors">Sign Up</button>
+        </div>
+      </nav>
+
+      <!-- Breadcrumbs -->
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-2 text-sm">
+          <li><a href="#" class="breadcrumb-link text-gray-500 hover:text-gray-700 transition-colors">Home</a></li>
+          <li class="text-gray-300">/</li>
+          <li><a href="#" class="breadcrumb-link text-gray-500 hover:text-gray-700 transition-colors">Products</a></li>
+          <li class="text-gray-300">/</li>
+          <li class="breadcrumb-current text-gray-900 font-medium">Current Page</li>
+        </ol>
+      </nav>
+
+      <!-- Tabs -->
+      <div class="tabs border-b border-gray-200">
+        <nav class="flex gap-0 -mb-px">
+          <a href="#" class="tab-active px-4 py-3 text-sm font-medium text-brand-600 border-b-2 border-brand-600">Active Tab</a>
+          <a href="#" class="tab-default px-4 py-3 text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-b-2 hover:border-gray-300 transition-colors">Tab Two</a>
+          <a href="#" class="tab-default px-4 py-3 text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-b-2 hover:border-gray-300 transition-colors">Tab Three</a>
+          <a href="#" class="tab-disabled px-4 py-3 text-sm font-medium text-gray-300 cursor-not-allowed">Disabled</a>
+        </nav>
+      </div>
+
+      <!-- Pill Tabs -->
+      <div class="tabs-pill flex gap-1 bg-gray-100 p-1 rounded-lg w-fit">
+        <a href="#" class="tab-pill-active px-4 py-2 text-sm font-medium bg-white text-gray-900 rounded-md shadow-sm">Active</a>
+        <a href="#" class="tab-pill px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 rounded-md transition-colors">Tab Two</a>
+        <a href="#" class="tab-pill px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700 rounded-md transition-colors">Tab Three</a>
+      </div>
+
+      <!-- Pagination -->
+      <nav class="pagination flex items-center gap-1" aria-label="Pagination">
+        <a href="#" class="page-link px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 rounded-lg transition-colors">&laquo; Prev</a>
+        <a href="#" class="page-link px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">1</a>
+        <a href="#" class="page-link-active px-3 py-2 text-sm text-white bg-brand-600 rounded-lg">2</a>
+        <a href="#" class="page-link px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">3</a>
+        <span class="page-ellipsis px-3 py-2 text-sm text-gray-400">...</span>
+        <a href="#" class="page-link px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 rounded-lg transition-colors">10</a>
+        <a href="#" class="page-link px-3 py-2 text-sm text-gray-500 hover:bg-gray-100 rounded-lg transition-colors">Next &raquo;</a>
+      </nav>
+    </section>
+
+    <!-- ========================================
+         SECTION: Accordion / Disclosure
+    ========================================= -->
+    <section class="section-accordion space-y-4">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Accordion / Disclosure</div>
+      <details class="accordion-item border border-gray-200 rounded-lg group" open>
+        <summary class="accordion-trigger flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50 transition-colors list-none">
+          Accordion Item One (Open)
+          <span class="accordion-icon text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+        </summary>
+        <div class="accordion-content px-6 pb-4 text-gray-600">
+          Content for the first accordion panel. This uses the native HTML <code class="inline-code bg-gray-100 text-sm font-mono px-1 rounded">&lt;details&gt;</code> element.
+        </div>
+      </details>
+      <details class="accordion-item border border-gray-200 rounded-lg group">
+        <summary class="accordion-trigger flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50 transition-colors list-none">
+          Accordion Item Two (Closed)
+          <span class="accordion-icon text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+        </summary>
+        <div class="accordion-content px-6 pb-4 text-gray-600">
+          Content for the second accordion panel.
+        </div>
+      </details>
+      <details class="accordion-item border border-gray-200 rounded-lg group">
+        <summary class="accordion-trigger flex items-center justify-between px-6 py-4 cursor-pointer font-medium text-gray-900 hover:bg-gray-50 transition-colors list-none">
+          Accordion Item Three (Closed)
+          <span class="accordion-icon text-gray-400 group-open:rotate-180 transition-transform">&#9660;</span>
+        </summary>
+        <div class="accordion-content px-6 pb-4 text-gray-600">
+          Content for the third accordion panel.
+        </div>
+      </details>
+    </section>
+
+    <!-- ========================================
+         SECTION: Modal / Dialog
+    ========================================= -->
+    <section class="section-modal space-y-4">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Modal / Dialog (static preview)</div>
+      <div class="modal-backdrop bg-gray-900/50 rounded-xl p-8">
+        <div class="modal-dialog bg-white rounded-xl shadow-2xl max-w-md mx-auto overflow-hidden">
+          <div class="modal-header px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+            <h3 class="modal-title text-lg font-semibold text-gray-900">Modal Title</h3>
+            <button class="modal-close text-gray-400 hover:text-gray-600 text-2xl leading-none">&times;</button>
+          </div>
+          <div class="modal-body px-6 py-4 text-gray-600">
+            <p>This is the modal body content. Use it for confirmations, forms, or important messages.</p>
+          </div>
+          <div class="modal-footer px-6 py-4 border-t border-gray-100 flex justify-end gap-3">
+            <button class="btn-secondary bg-white text-gray-600 font-medium px-4 py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors text-sm">Cancel</button>
+            <button class="btn-primary bg-brand-600 text-white font-medium px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors text-sm">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Tooltip & Popover (CSS-only hint)
+    ========================================= -->
+    <section class="section-tooltips space-y-4">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Tooltip (title attribute)</div>
+      <p class="text-gray-700">Hover over this <span class="tooltip-trigger underline decoration-dotted cursor-help text-brand-600" title="This is a native tooltip using the title attribute">tooltip trigger</span> to see the tooltip.</p>
+    </section>
+
+    <!-- ========================================
+         SECTION: Progress & Loading
+    ========================================= -->
+    <section class="section-progress space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Progress &amp; Loading</div>
+
+      <div>
+        <div class="flex justify-between text-sm text-gray-600 mb-1">
+          <span>Progress</span>
+          <span>65%</span>
+        </div>
+        <div class="progress-bar bg-gray-200 rounded-full h-2.5 overflow-hidden">
+          <div class="progress-fill bg-brand-600 h-full rounded-full transition-all" style="width: 65%"></div>
+        </div>
+      </div>
+
+      <div>
+        <progress class="progress-native w-full h-2.5 rounded-full [&::-webkit-progress-bar]:bg-gray-200 [&::-webkit-progress-bar]:rounded-full [&::-webkit-progress-value]:bg-green-500 [&::-webkit-progress-value]:rounded-full" value="80" max="100">80%</progress>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <div class="spinner-default w-8 h-8 border-4 border-gray-200 border-t-brand-600 rounded-full animate-spin"></div>
+        <span class="text-sm text-gray-500">Loading...</span>
+      </div>
+
+      <div class="skeleton-loader space-y-3 max-w-sm">
+        <div class="skeleton bg-gray-200 h-4 rounded animate-pulse"></div>
+        <div class="skeleton bg-gray-200 h-4 rounded animate-pulse w-3/4"></div>
+        <div class="skeleton bg-gray-200 h-4 rounded animate-pulse w-1/2"></div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SECTION: Footer
+    ========================================= -->
+    <section class="section-footer space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Footer</div>
+      <footer class="footer bg-gray-900 text-gray-300 rounded-xl px-8 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div class="footer-brand">
+            <h4 class="text-white font-bold text-lg mb-3">Brand</h4>
+            <p class="text-gray-400 text-sm">A brief tagline or description for the brand footer section.</p>
+          </div>
+          <div class="footer-links">
+            <h5 class="text-white font-semibold text-sm uppercase tracking-wider mb-3">Product</h5>
+            <ul class="space-y-2">
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">Features</a></li>
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">Docs</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h5 class="text-white font-semibold text-sm uppercase tracking-wider mb-3">Company</h5>
+            <ul class="space-y-2">
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">About</a></li>
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">Blog</a></li>
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h5 class="text-white font-semibold text-sm uppercase tracking-wider mb-3">Legal</h5>
+            <ul class="space-y-2">
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">Privacy</a></li>
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">Terms</a></li>
+              <li><a href="#" class="footer-link text-gray-400 text-sm hover:text-white transition-colors">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p class="footer-copyright text-gray-500 text-sm">&copy; 2026 Brand. All rights reserved.</p>
+          <div class="footer-social flex gap-4">
+            <a href="#" class="social-link text-gray-400 hover:text-white transition-colors" aria-label="Twitter">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-link text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="social-link text-gray-400 hover:text-white transition-colors" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- ========================================
+         SECTION: Utility / Spacing Demo
+    ========================================= -->
+    <section class="section-utilities space-y-6">
+      <div class="section-label text-xs font-mono uppercase tracking-widest text-gray-400 border-b border-gray-200 pb-2 mb-4">Utility — Spacing &amp; Layout</div>
+      <div class="flex gap-4">
+        <div class="bg-brand-100 text-brand-700 text-xs font-mono p-4 rounded-lg text-center">p-4</div>
+        <div class="bg-brand-100 text-brand-700 text-xs font-mono p-6 rounded-lg text-center">p-6</div>
+        <div class="bg-brand-100 text-brand-700 text-xs font-mono p-8 rounded-lg text-center">p-8</div>
+      </div>
+      <div class="flex gap-4">
+        <div class="bg-gray-200 text-gray-600 text-xs font-mono rounded text-center p-3">rounded</div>
+        <div class="bg-gray-200 text-gray-600 text-xs font-mono rounded-lg text-center p-3">rounded-lg</div>
+        <div class="bg-gray-200 text-gray-600 text-xs font-mono rounded-xl text-center p-3">rounded-xl</div>
+        <div class="bg-gray-200 text-gray-600 text-xs font-mono rounded-2xl text-center p-3">rounded-2xl</div>
+        <div class="bg-gray-200 text-gray-600 text-xs font-mono rounded-full text-center p-3">rounded-full</div>
+      </div>
+      <div class="flex gap-4">
+        <div class="bg-white text-gray-600 text-xs font-mono shadow-sm rounded-lg p-4 text-center">shadow-sm</div>
+        <div class="bg-white text-gray-600 text-xs font-mono shadow rounded-lg p-4 text-center">shadow</div>
+        <div class="bg-white text-gray-600 text-xs font-mono shadow-md rounded-lg p-4 text-center">shadow-md</div>
+        <div class="bg-white text-gray-600 text-xs font-mono shadow-lg rounded-lg p-4 text-center">shadow-lg</div>
+        <div class="bg-white text-gray-600 text-xs font-mono shadow-xl rounded-lg p-4 text-center">shadow-xl</div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
